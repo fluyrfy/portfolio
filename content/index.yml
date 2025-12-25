@@ -1,13 +1,43 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Frank Liao - Full-stack Engineer"
+  description: "Full-stack engineer, specializing in web development, AI integration, and building products from concept to production."
+title: "Hey, I'm Frank Liao\nFull-stack Engineer"
+description: "Turning complex problems into intelligent solutions."
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "View Resume"
+      to: https://frankliao.pse.is/8hjsa3
       color: "neutral"
+  skills:
+    - label: "LangChain"
+      icon: "i-simple-icons-langchain"
+    - label: "LangGraph"
+      icon: "i-lucide-git-graph"
+    - label: "Nuxt"
+      icon: "i-simple-icons-nuxtdotjs"
+    - label: "Vue"
+      icon: "i-simple-icons-vuedotjs"
+    - label: "Next"
+      icon: "i-simple-icons-nextdotjs"
+    - label: "GSAP"
+      icon: "i-simple-icons-greensock"
+    - label: "React Native"
+      icon: "i-simple-icons-react"
+    - label: "Node.js"
+      icon: "i-simple-icons-nodedotjs"
+    - label: "Spring Boot"
+      icon: "i-simple-icons-springboot"
+    - label: "FastAPI"
+      icon: "i-simple-icons-fastapi"
+    - label: "Redis"
+      icon: "i-simple-icons-redis"
+    - label: "PostgreSQL"
+      icon: "i-simple-icons-postgresql"
+    - label: "SQL Server"
+      icon: "i-simple-icons-microsoftsqlserver"
+    - label: "Docker"
+      icon: "i-simple-icons-docker"
+
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
@@ -30,32 +60,43 @@ hero:
 about:
   title: "About Me"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    從接案公司、大學研究單位到金融系統與雲端平台，我跨足了**前後端、App 及 AI 產品**的完整開發歷程。
+
+    擅長將複雜需求拆解為可執行的產品方案，且不止步於技術實現，更致力於讓產品落實到位。
+
+    對我而言，
+    能真正解決使用者痛點的技術，才是最有價值的**創新**。
 experience:
   title: Work Experience
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
-      company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
-      company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
-      company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+  - position: "資深工程師 / AI 工程師"
+    date: "2024/05 - Present"
+    company:
+      name: "惠安雲資訊（原耘騰科技）"
+      logo: "i-lucide-cloud"
+      url: ""
+      color: "#3B82F6"
+  - position: "資訊工程師"
+    date: "2023/11 - 2024/05"
+    company:
+      name: "國立陽明交通大學"
+      logo: "i-lucide-graduation-cap"
+      url: ""
+      color: "#8B5CF6"
+  - position: "程式設計師"
+    date: "2023/06 - 2023/09"
+    company:
+      name: "亞洲志遠科技"
+      logo: "i-lucide-building-2"
+      url: ""
+      color: "#10B981"
+  - position: "前端工程師"
+    date: "2022/04 - 2022/12"
+    company:
+      name: "豈止數位設計"
+      logo: "i-lucide-palette"
+      url: ""
+      color: "#F59E0B"
 testimonials:
   - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
     author:
@@ -118,3 +159,9 @@ faq:
         - label: What are your hobbies outside of work?
           content: |
             When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+cta:
+  title: "Let's build something together"
+  description: "無論是技術交流、專案合作，或是關於 AI 落地應用的探討，都歡迎與我聊聊。"
+  button:
+    label: "透過 Email 聯絡我"
+    icon: "i-lucide-mail"

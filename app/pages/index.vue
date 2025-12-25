@@ -29,8 +29,18 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
+    <!-- <LandingTestimonials :page /> -->
+    <div class="bg-gray-50/50 dark:bg-gray-900/50 border-y border-gray-100 dark:border-gray-800">
+      <LandingCapabilities :page />
+    </div>
+
     <LandingBlog :page />
-    <LandingTestimonials :page />
-    <LandingFAQ :page />
+    <!-- <LandingFAQ :page /> -->
+    <UPageSection
+      class="bg-gray-50/50 dark:bg-gray-900/50 rounded-3xl my-16"
+      :ui="{ container: 'py-12 sm:py-20' }"
+    >
+      <LandingCTA :page />
+    </UPageSection>
   </UPage>
 </template>

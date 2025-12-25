@@ -70,6 +70,14 @@ export default defineContentConfig({
                 })
               )
             }))
+        }),
+        cta: z.object({
+          title: z.string(),
+          description: z.string(),
+          button: z.object({
+            label: z.string(),
+            icon: z.string()
+          })
         })
       })
     }),
