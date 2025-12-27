@@ -1,0 +1,7 @@
+title: YG Pilot AI 智能助手
+description: 獨立開發基於多代理（Multi-agent）架構的 RAG 系統，整合 RAG 文件問答與 Text2SQL 自然語言查詢，讓非技術用戶也能直接用對話取得資料庫數據。透過多層驗證機制降低 LLM 幻覺，搭配進度視覺化 UI 提升使用體驗。產品獲 Google Taiwan 引薦至多家零售企業展示。
+image: "images/projects/yg-pilot/logo.gif"
+imageContain: true
+url: "#"
+tags: ["LangGraph", "Nuxt", "FastAPI", "Text2SQL", "PostgreSQL", "Redis"]
+date: "2025"  # 用於排序

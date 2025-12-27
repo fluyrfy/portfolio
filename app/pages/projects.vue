@@ -14,7 +14,7 @@ const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').all()
 })
 
-const { global } = useAppConfig()
+// const { global } = useAppConfig()
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
@@ -29,14 +29,13 @@ useSeoMeta({
     <UPageHero
       :title="page.title"
       :description="page.description"
-      :links="page.links"
       :ui="{
-        title: '!mx-0 text-left',
+        title: '!mx-0 text-left whitespace-break-spaces',
         description: '!mx-0 text-left',
         links: 'justify-start'
       }"
     >
-      <template #links>
+      <!-- <template #links>
         <div
           v-if="page.links"
           class="flex items-center gap-2"
@@ -51,7 +50,7 @@ useSeoMeta({
             v-bind="page.links[1]"
           />
         </div>
-      </template>
+      </template> -->
     </UPageHero>
     <UPageSection
       :ui="{
@@ -69,36 +68,59 @@ useSeoMeta({
         <UPageCard
           :title="project.title"
           :description="project.description"
-          :to="project.url"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"
-          class="group"
+          class="group cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors rounded-xl p-4 -m-4"
           :ui="{
             wrapper: 'max-sm:order-last'
           }"
+          @click="project.url !== '#' && navigateTo(project.url, { external: true, open: { target: '_blank' } })"
         >
           <template #leading>
             <span class="text-sm text-muted">
               {{ new Date(project.date).getFullYear() }}
             </span>
           </template>
+          <template #title>
+            <div class="flex items-center gap-2">
+              {{ project.title }}
+              <UIcon
+                v-if="project.url !== '#'"
+                name="i-lucide-external-link"
+                class="size-4 text-muted opacity-0 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </template>
           <template #footer>
-            <ULink
+            <div class="flex flex-wrap gap-2 mt-4">
+              <UBadge
+                v-for="tag in project.tags"
+                :key="tag"
+                :label="tag"
+                variant="subtle"
+                size="xs"
+                color="neutral"
+                class="rounded-md px-1.5 py-0.5 text-[10px]"
+              />
+            </div>
+            <!-- <ULink
+              v-if="project.url && project.url !== '#'"
               :to="project.url"
-              class="text-sm text-primary flex items-center"
+              class="text-sm text-primary flex items-center mt-3"
             >
               View Project
               <UIcon
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
               />
-            </ULink>
+            </ULink> -->
           </template>
           <img
             :src="project.image"
             :alt="project.title"
-            class="object-cover w-full h-48 rounded-lg"
+            class="w-full h-48 rounded-lg"
+            :class="project.imageContain ? 'object-contain' : 'object-cover'"
           >
         </UPageCard>
       </Motion>

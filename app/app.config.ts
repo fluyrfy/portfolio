@@ -6,7 +6,7 @@ export default defineAppConfig({
       alt: 'My profile picture'
     },
     meetingLink: 'mailto:yufanliaocestlavie@gmail.com',
-    email: 'ui-pro@nuxt.com',
+    email: 'yufanliaocestlavie@gmail.com',
     available: true
   },
   ui: {

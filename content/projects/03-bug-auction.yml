@@ -1,0 +1,8 @@
+# /content/projects/bug-auction.yml
+
+title: 虫購 - 寵物昆蟲競標平台
+description: 負責前後端開發，包含買家競標介面、賣家商品管理後台，以及平台營運管理系統。實作即時競標功能讓買賣雙方同步看到出價更新，並整合統一金流完成完整交易流程。
+image: "/images/projects/bug-auction/huei-shop.jpg"
+url: "https://huei-shop.com/"
+tags: ["Nuxt", "Spring Boot", "WebSocket", "PostgreSQL", "Redis", "PAYUNi"]
+date: "2025"
