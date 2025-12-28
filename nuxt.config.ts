@@ -9,13 +9,16 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'motion-v/nuxt',
     'nuxt-studio',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    '@nuxtjs/seo'
   ],
   devtools: {
     enabled: true
   },
 
   css: ['~/assets/css/main.css'],
+
+  site: { url: 'https://frankliao.dev', name: 'Frank Liao' },
 
   compatibilityDate: '2024-11-01',
 

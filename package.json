@@ -18,6 +18,7 @@
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.3.0",
     "@nuxthq/studio": "2.2.1",
+    "@nuxtjs/seo": "3.3.0",
     "@vueuse/nuxt": "^14.1.0",
     "better-sqlite3": "^12.5.0",
     "motion-v": "^1.7.3",

@@ -18,9 +18,10 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
+  title: 'Full-stack Engineer',
+  titleTemplate: '%s | Frank Liao',
+  ogImage: 'https://frankliao.dev/og-image.png',
+  twitterImage: 'https://frankliao.dev/og-image.png',
   twitterCard: 'summary_large_image'
 })
 
