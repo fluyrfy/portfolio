@@ -9,6 +9,7 @@ const appConfig = useAppConfig()
 
 <template>
   <UPageCTA
+    id="contact"
     :title="page.cta.title"
     :description="page.cta.description"
     align="center"

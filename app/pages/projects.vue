@@ -73,7 +73,7 @@ useSeoMeta({
           :reverse="index % 2 === 1"
           class="group cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors rounded-xl p-4 -m-4"
           :ui="{
-            wrapper: 'max-sm:order-last'
+            wrapper: 'max-lg:!order-2'
           }"
           @click="project.url !== '#' && navigateTo(project.url, { external: true, open: { target: '_blank' } })"
         >

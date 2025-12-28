@@ -1,27 +1,31 @@
 title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+description: 我是 Frank，一名專注於將複雜問題轉化為直觀產品的開發者。
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  > **在數位產品開發的領域中，我認為技術的價值在於能多精準地處理那些「不效率」。**
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  對我而言，**「紮實的工程技術」與「對問題的洞察力」是相輔相成的**。我傾向於深入理解需求的核心後，才去定義最合適的技術路徑。
 
-  ### My Design Philosophy
+  這種以目標為導向的思維，讓我能在複雜的業務邏輯中理出頭緒，並運用開發能力確保解決方案能真正落地。我的核心目標始終是**縮短「問題」與「解答」之間的距離**，讓技術成為解決核心痛點的最強後盾。
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  ### 關於實踐
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  在執行面上，我追求 **乾淨且具備韌性** 的系統架構。無論是在處理複雜數據的驗證，還是確保即時通訊的穩定性，出發點始終是創造「穩定」且「良好」的使用體驗。
+  我深知良好的工程品質是產品長期穩定營運的基石，因此在開發的每一階段，我都會在 **「開發速度」** 與 **「系統擴張性」** 之間尋找最合適的技術平衡點。
 
-  ### What Drives Me
+  ### 為什麼我對此充滿熱情
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  對我而言，開發最有成就感的時刻，是看到產品在真實場景中發揮作用。無論是協助企業從繁瑣的流程中解脫，還是提升第一線人員的操作體驗，這種將 **「邏輯」轉化為「價值」** 的過程，是我持續精進技術能力的驅動力。
+  透過不斷擴展我的技術工具箱，我能更靈活地因應不同類型的問題，並在面對未知的挑戰時，依然能交出**穩健且符合預期**的成果。
 
-  ### Beyond the Screen
+  ### 螢幕之外的生活
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  開發之餘，我喜歡觀察身邊各種系統與細節的運作邏輯。無論是咖啡店的動線規劃，還是生活中的各種小細節，這些日常中的 **「運作模式」** 常能給我不同的啟發。
+  我也喜歡隨手拍下生活中的小確幸或有意思的瞬間。對我來說，觀察世界的過程，能讓我換個視角思考問題，在快節奏的開發生活中保持平衡。
+  
+  感謝你的造訪。你可以看看我的 [精選作品](/projects)，或是直接 [聯絡我](/#contact) 聊聊你的想法！
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
 images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  - src: "/images/about/road.jpg"
+    alt: "Journey"
+  - src: "/images/about/sunday.jpg"
+    alt: "Vibe"
