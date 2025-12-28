@@ -7332,6 +7332,16 @@ nuxt-component-meta@^0.9.0:
     ufo "^1.5.4"
     vue-component-meta "^2.1.8"
 
+nuxt-gtag@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-gtag/-/nuxt-gtag-4.1.0.tgz#13b879e0aed7646d5aec7a9a39f2dbd9ac7f6b21"
+  integrity sha512-2TL7RUA8N8NYGbY4UZ9IqKyMZMgO9cCGu6yqadUU8RF+Y81PXI+k+1giIA11XXStaJoGXaXeNsBUIJXn1tUy3A==
+  dependencies:
+    "@nuxt/kit" "^4.1.3"
+    defu "^6.1.4"
+    pathe "^2.0.3"
+    ufo "^1.6.1"
+
 nuxt-og-image@^5.1.13:
   version "5.1.13"
   resolved "https://registry.yarnpkg.com/nuxt-og-image/-/nuxt-og-image-5.1.13.tgz#b1123dc21bb94c2a1d274a9dde1ff713d65831ed"

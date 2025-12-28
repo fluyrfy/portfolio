@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    'nuxt-studio'
+    'nuxt-studio',
+    'nuxt-gtag'
   ],
   devtools: {
     enabled: true
@@ -34,6 +35,10 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  gtag: {
+    id: process.env.NUXT_PUBLIC_GTAG_ID
   },
   studio: {
     repository: {

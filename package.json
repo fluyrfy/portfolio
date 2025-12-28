@@ -25,12 +25,19 @@
     "nuxt-og-image": "^5.1.13",
     "nuxt-studio": "1.0.0-beta.3"
   },
+  "installConfig": {
+    "supportedArchitectures": {
+      "os": ["darwin", "linux"],
+      "cpu": ["arm64", "x64"]
+    }
+  },
   "devDependencies": {
     "@nuxt/eslint": "^1.12.1",
     "@oxc-minify/binding-darwin-arm64": "^0.105.0",
     "@oxc-parser/binding-darwin-arm64": "^0.105.0",
     "@oxc-transform/binding-darwin-arm64": "^0.105.0",
     "eslint": "^9.39.2",
+    "nuxt-gtag": "^4.1.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.1",
     "zod": "^3",
