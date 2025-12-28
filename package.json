@@ -17,11 +17,13 @@
     "@nuxt/content": "^3.9.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.3.0",
+    "@nuxthq/studio": "2.2.1",
     "@vueuse/nuxt": "^14.1.0",
     "better-sqlite3": "^12.5.0",
     "motion-v": "^1.7.3",
     "nuxt": "^4.2.2",
-    "nuxt-og-image": "^5.1.13"
+    "nuxt-og-image": "^5.1.13",
+    "nuxt-studio": "1.0.0-beta.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.12.1",

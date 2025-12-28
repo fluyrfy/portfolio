@@ -5,7 +5,7 @@ defineProps<{
   page: IndexCollectionItem
 }>()
 
-const { data: posts } = await useAsyncData('index-blogs', () =>
+const { data: posts, pending } = await useAsyncData('index-blogs', () =>
   queryCollection('blog').order('date', 'DESC').limit(3).all()
 )
 if (!posts.value) {
@@ -23,6 +23,29 @@ if (!posts.value) {
       description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
     }"
   >
+    <!-- Skeleton -->
+    <div
+      v-if="pending"
+      class="space-y-4"
+    >
+      <USkeleton
+        v-for="i in 3"
+        :key="i"
+        class="h-24 w-full"
+      />
+    </div>
+
+    <!-- Coming Soon -->
+    <div
+      v-else-if="!posts?.length"
+      class="text-center py-12 text-muted"
+    >
+      <UIcon
+        name="i-lucide-pen-line"
+        class="size-8 mb-4"
+      />
+      <p>Coming Soon</p>
+    </div>
     <UBlogPosts
       orientation="vertical"
       class="gap-4 lg:gap-y-4"

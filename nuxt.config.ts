@@ -7,9 +7,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    'nuxt-studio'
   ],
-
   devtools: {
     enabled: true
   },
@@ -33,6 +33,14 @@ export default defineNuxtConfig({
         commaDangle: 'never',
         braceStyle: '1tbs'
       }
+    }
+  },
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'fluyrfy',
+      repo: 'portfolio',
+      branch: 'main'
     }
   }
 })
