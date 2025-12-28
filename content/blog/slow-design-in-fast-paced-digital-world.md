@@ -1,5 +1,6 @@
 ---
 title: The Case for Slow Design in a Fast-Paced Digital World
+draft: true
 description: Why designing digital experiences that encourage users to slow down
   and engage deeply can lead to more meaningful interactions and better
   outcomes.

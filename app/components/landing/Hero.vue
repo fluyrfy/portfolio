@@ -8,7 +8,6 @@ defineProps<{
 }>()
 
 const isImageLoaded = ref(false)
-// const imgRef = ref<HTMLImageElement | null>(null)
 
 onMounted(() => {
   const src = global.picture?.light || global.picture?.dark

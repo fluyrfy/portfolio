@@ -1,5 +1,6 @@
 ---
 title: How I Built My Design System from Scratch
+draft: true
 description: A practical guide to creating your own design system, from initial
   audit to implementation, and the lessons learned along the way.
 date: 2025-03-05
