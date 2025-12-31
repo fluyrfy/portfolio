@@ -2,7 +2,7 @@
 
 title: 惠安雲 KEIAN Cloud Sync - 雲端儲存平台
 description: 負責雲端平台前端開發與技術規範建立。實作大檔案分片上傳機制，支援斷點續傳與智慧重試；設計五層降級刪除策略處理特殊字元檔案問題。同時建立 Nuxt 4 Starter 模板與 FSD 架構規範，作為團隊開發標準。
-image: "/images/projects/keian-cloud/kcs.png"
-url: "https://github.com/fluyrfy/nuxt4-starter"
-tags: ["Nuxt", "Spring Boot", "Cloudflare R2", "FSD"]
-date: "2025"
+image: '/images/projects/keian-cloud/kcs.png'
+url: 'https://github.com/fluyrfy/nuxt4-starter'
+tags: ['Nuxt', 'Spring Boot', 'Cloudflare R2', 'FSD']
+date: '2025'

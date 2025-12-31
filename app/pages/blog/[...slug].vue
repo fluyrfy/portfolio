@@ -4,30 +4,58 @@ import { mapContentNavigation } from '@nuxt/ui/utils/content'
 import { findPageBreadcrumb } from '@nuxt/content/utils'
 
 const route = useRoute()
+const { fetchPost } = useBlog()
 
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
+const { data: page } = await useAsyncData(
+  route.path,
+  () => fetchPost(route.path),
+  {
+    watch: [() => route.path],
+  },
 )
-if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+
+// if (!page.value)
+//   throw createError({
+//     statusCode: 404,
+//     statusMessage: 'Page not found',
+//     fatal: true,
+//   })
+
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
   queryCollectionItemSurroundings('blog', route.path, {
-    fields: ['description']
-  })
+    fields: ['description'],
+  }),
+)
+
+const filteredSurround = computed(
+  () => surround.value?.filter((item) => item?.path) || [],
 )
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
-const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
+const blogNavigation = computed(
+  () => navigation.value.find((item) => item.path === '/blog')?.children || [],
+)
 
-const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
+const breadcrumb = computed(() =>
+  mapContentNavigation(
+    findPageBreadcrumb(blogNavigation?.value, page.value?.path),
+  ).map(({ icon, ...link }) => link),
+)
 
-if (page.value.image) {
-  defineOgImage({ url: page.value.image })
-} else {
-  defineOgImageComponent('Blog', {
-    headline: breadcrumb.value.map(item => item.label).join(' > ')
-  }, {
-    fonts: ['Geist:400', 'Geist:600']
-  })
+if (page.value) {
+  if (page.value.image) {
+    defineOgImage({ url: page.value.image })
+  } else {
+    defineOgImageComponent(
+      'Blog',
+      {
+        headline: breadcrumb.value.map((item) => item.label).join(' > '),
+      },
+      {
+        fonts: ['Geist:400', 'Geist:600'],
+      },
+    )
+  }
 }
 
 const title = page.value?.seo?.title || page.value?.title
@@ -37,16 +65,17 @@ useSeoMeta({
   title,
   description,
   ogDescription: description,
-  ogTitle: title
+  ogTitle: title,
 })
 
-const articleLink = computed(() => `${window?.location}`)
+const url = useRequestURL()
+const articleLink = computed(() => url.href)
 
 const formatDate = (dateString: string) => {
   return new Date(dateString).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
-    day: 'numeric'
+    day: 'numeric',
   })
 }
 </script>
@@ -55,24 +84,19 @@ const formatDate = (dateString: string) => {
   <UMain class="mt-20 px-2">
     <UContainer class="relative min-h-screen">
       <UPage v-if="page">
-        <ULink
-          to="/blog"
-          class="text-sm flex items-center gap-1"
-        >
+        <ULink to="/blog" class="text-sm flex items-center gap-1">
           <UIcon name="lucide:chevron-left" />
           Blog
         </ULink>
         <div class="flex flex-col gap-3 mt-8">
-          <div class="flex text-xs text-muted items-center justify-center gap-2">
+          <div
+            class="flex text-xs text-muted items-center justify-center gap-2"
+          >
             <span v-if="page.date">
               {{ formatDate(page.date) }}
             </span>
-            <span v-if="page.date && page.minRead">
-              -
-            </span>
-            <span v-if="page.minRead">
-              {{ page.minRead }} MIN READ
-            </span>
+            <span v-if="page.date && page.minRead"> - </span>
+            <span v-if="page.minRead"> {{ page.minRead }} MIN READ </span>
           </div>
           <NuxtImg
             :src="page.image"
@@ -96,10 +120,7 @@ const formatDate = (dateString: string) => {
           </div>
         </div>
         <UPageBody class="max-w-3xl mx-auto">
-          <ContentRenderer
-            v-if="page.body"
-            :value="page"
-          />
+          <ContentRenderer v-if="page.body" :value="page" />
 
           <div class="flex items-center justify-end gap-2 text-sm text-muted">
             <UButton
@@ -107,10 +128,12 @@ const formatDate = (dateString: string) => {
               variant="link"
               color="neutral"
               label="Copy link"
-              @click="copyToClipboard(articleLink, 'Article link copied to clipboard')"
+              @click="
+                copyToClipboard(articleLink, 'Article link copied to clipboard')
+              "
             />
           </div>
-          <UContentSurround :surround />
+          <UContentSurround :surround="filteredSurround" />
         </UPageBody>
       </UPage>
     </UContainer>

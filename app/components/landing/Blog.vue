@@ -7,7 +7,9 @@ defineProps<{
 }>()
 
 const { fetchPosts } = useBlog()
-const { data: posts, pending } = await useAsyncData('index-blogs', () => fetchPosts(3))
+const { data: posts, pending } = await useAsyncData('index-blogs', () =>
+  fetchPosts(3),
+)
 // if (!posts.value) {
 //   throw createError({ statusCode: 404, statusMessage: 'blogs posts not found', fatal: true })
 // }
@@ -20,17 +22,11 @@ const { data: posts, pending } = await useAsyncData('index-blogs', () => fetchPo
     :ui="{
       container: 'px-0 sm:gap-6 lg:gap-8',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted'
+      description: 'text-left mt-2 text-sm sm:text-md lg:text-sm text-muted',
     }"
   >
-    <PostListWrapper
-      :pending="pending"
-      :posts="posts"
-    >
-      <UBlogPosts
-        orientation="vertical"
-        class="gap-4 lg:gap-y-4"
-      >
+    <PostListWrapper :pending="pending" :posts="posts">
+      <UBlogPosts orientation="vertical" class="gap-4 lg:gap-y-4">
         <UBlogPost
           v-for="(post, index) in posts"
           :key="index"
@@ -41,7 +37,7 @@ const { data: posts, pending } = await useAsyncData('index-blogs', () => fetchPo
           :ui="{
             root: 'group relative lg:items-start lg:flex ring-0 hover:ring-0',
             body: '!px-0',
-            header: 'hidden'
+            header: 'hidden',
           }"
         >
           <template #footer>

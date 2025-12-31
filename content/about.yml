@@ -25,7 +25,7 @@ content: |
   感謝你的造訪。你可以看看我的 [精選作品](/projects)，或是直接 [聯絡我](/#contact) 聊聊你的想法！
 
 images:
-  - src: "/images/about/road.jpg"
-    alt: "Journey"
-  - src: "/images/about/sunday.jpg"
-    alt: "Vibe"
+  - src: '/images/about/road.jpg'
+    alt: 'Journey'
+  - src: '/images/about/sunday.jpg'
+    alt: 'Vibe'

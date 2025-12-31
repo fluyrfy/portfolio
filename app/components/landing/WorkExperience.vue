@@ -57,7 +57,7 @@ defineProps<{
     :ui="{
       container: '!p-0 gap-6',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
-      description: 'mt-6'
+      description: 'mt-6',
     }"
   >
     <template #description>
@@ -71,13 +71,17 @@ defineProps<{
           :in-view-options="{ once: true }"
           class="grid grid-cols-[110px_1fr] sm:grid-cols-[140px_1fr] gap-4 items-start"
         >
-          <p class="text-xs sm:text-sm font-mono text-muted/80 pt-1 uppercase tracking-wider">
+          <p
+            class="text-xs sm:text-sm font-mono text-muted/80 pt-1 uppercase tracking-wider"
+          >
             {{ experience.date }}
           </p>
 
           <div class="flex flex-col gap-1">
             <div class="flex flex-wrap items-baseline gap-x-2">
-              <span class="text-sm sm:text-base font-semibold text-gray-900 dark:text-white">
+              <span
+                class="text-sm sm:text-base font-semibold text-gray-900 dark:text-white"
+              >
                 {{ experience.position }}
               </span>
 
@@ -108,6 +112,4 @@ defineProps<{
   </UPageSection>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

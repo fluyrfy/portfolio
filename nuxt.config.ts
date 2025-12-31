@@ -10,45 +10,60 @@ export default defineNuxtConfig({
     'motion-v/nuxt',
     'nuxt-studio',
     'nuxt-gtag',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@barzhsieh/nuxt-content-mermaid',
   ],
   devtools: {
-    enabled: true
+    enabled: true,
   },
-
   css: ['~/assets/css/main.css'],
 
   site: { url: 'https://frankliao.dev', name: 'Frank Liao' },
-
   compatibilityDate: '2024-11-01',
-
   nitro: {
     prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: true
-    }
+      routes: ['/'],
+      crawlLinks: true,
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['dayjs'],
+    },
+  },
+
+  contentMermaid: {
+    components: {
+      renderer: 'MermaidExcalidraw',
+      spinner: undefined,
+      error: undefined,
+    },
+    loader: {
+      lazy: false,
+      init: {
+        suppressErrorRendering: true,
+      },
+    },
   },
 
   eslint: {
     config: {
       stylistic: {
         commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
+        braceStyle: '1tbs',
+      },
+    },
   },
 
   gtag: {
-    id: process.env.NUXT_PUBLIC_GTAG_ID
+    id: process.env.NUXT_PUBLIC_GTAG_ID,
   },
   studio: {
     repository: {
       provider: 'github',
       owner: 'fluyrfy',
       repo: 'portfolio',
-      branch: 'main'
-    }
-  }
+      branch: 'main',
+    },
+  },
 })

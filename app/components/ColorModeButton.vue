@@ -1,7 +1,9 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 
-const nextTheme = computed(() => (colorMode.value === 'dark' ? 'light' : 'dark'))
+const nextTheme = computed(() =>
+  colorMode.value === 'dark' ? 'light' : 'dark',
+)
 
 const switchTheme = () => {
   colorMode.preference = nextTheme.value
@@ -17,7 +19,7 @@ const startViewTransition = (event: MouseEvent) => {
   const y = event.clientY
   const endRadius = Math.hypot(
     Math.max(x, window.innerWidth - x),
-    Math.max(y, window.innerHeight - y)
+    Math.max(y, window.innerHeight - y),
   )
 
   const transition = document.startViewTransition(() => {
@@ -30,14 +32,14 @@ const startViewTransition = (event: MouseEvent) => {
       {
         clipPath: [
           `circle(0px at ${x}px ${y}px)`,
-          `circle(${endRadius}px at ${x}px ${y}px)`
-        ]
+          `circle(${endRadius}px at ${x}px ${y}px)`,
+        ],
       },
       {
         duration: duration,
         easing: 'cubic-bezier(.76,.32,.29,.99)',
-        pseudoElement: '::view-transition-new(root)'
-      }
+        pseudoElement: '::view-transition-new(root)',
+      },
     )
   })
 }

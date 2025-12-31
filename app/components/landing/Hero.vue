@@ -33,7 +33,7 @@ onMounted(() => {
       title: 'text-shadow-md max-w-sm mx-auto sm:max-w-md lg:max-w-lg',
       links: 'mt-4 flex-col justify-center items-center',
       wrapper: 'py-0', // 移除原有的 py 讓 flex 居中發揮作用
-      container: 'flex flex-col justify-center'
+      container: 'flex flex-col justify-center',
     }"
   >
     <template #headline>
@@ -68,7 +68,7 @@ onMounted(() => {
                 class="rounded-full object-cover personal-avatar"
                 @load="isImageLoaded = true"
                 @error="isImageLoaded = true"
-              >
+              />
             </template>
           </UColorModeAvatar>
         </div>
@@ -80,16 +80,16 @@ onMounted(() => {
         :initial="{
           scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          filter: 'blur(20px)',
         }"
         :animate="{
           scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          filter: 'blur(0px)',
         }"
         :transition="{
           duration: 0.6,
-          delay: 0.1
+          delay: 0.1,
         }"
         class="whitespace-pre-line leading-tight tracking-tight"
       >
@@ -102,16 +102,16 @@ onMounted(() => {
         :initial="{
           scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          filter: 'blur(20px)',
         }"
         :animate="{
           scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          filter: 'blur(0px)',
         }"
         :transition="{
           duration: 0.6,
-          delay: 0.3
+          delay: 0.3,
         }"
       >
         {{ page.description }}
@@ -123,22 +123,19 @@ onMounted(() => {
         :initial="{
           scale: 1.1,
           opacity: 0,
-          filter: 'blur(20px)'
+          filter: 'blur(20px)',
         }"
         :animate="{
           scale: 1,
           opacity: 1,
-          filter: 'blur(0px)'
+          filter: 'blur(0px)',
         }"
         :transition="{
           duration: 0.6,
-          delay: 0.5
+          delay: 0.5,
         }"
       >
-        <div
-          v-if="page.hero.links"
-          class="flex items-center gap-2"
-        >
+        <div v-if="page.hero.links" class="flex items-center gap-2">
           <UButton
             v-bind="page.hero.links[0]"
             target="_blank"
@@ -155,7 +152,9 @@ onMounted(() => {
               <span class="relative flex size-2">
                 <span
                   class="absolute inline-flex size-full rounded-full opacity-75"
-                  :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
+                  :class="
+                    global.available ? 'bg-success animate-ping' : 'bg-error'
+                  "
                 />
                 <span
                   class="relative inline-flex size-2 scale-90 rounded-full"

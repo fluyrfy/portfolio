@@ -1,42 +1,42 @@
 seo:
-  title: "Full-stack Engineer"
-  description: "Specializing in web development, AI integration, and building products from concept to production."
+  title: 'Full-stack Engineer'
+  description: 'Specializing in web development, AI integration, and building products from concept to production.'
 title: "Hey, I'm Frank Liao\nFull-stack Engineer"
-description: "Turning complex problems into intelligent solutions."
+description: 'Turning complex problems into intelligent solutions.'
 hero:
   links:
-    - label: "View Resume"
+    - label: 'View Resume'
       to: https://frankliao.pse.is/8hjsa3
-      color: "neutral"
+      color: 'neutral'
   skills:
-    - label: "LangChain"
-      icon: "i-simple-icons-langchain"
-    - label: "LangGraph"
-      icon: "i-lucide-git-graph"
-    - label: "Nuxt"
-      icon: "i-simple-icons-nuxtdotjs"
-    - label: "Vue"
-      icon: "i-simple-icons-vuedotjs"
-    - label: "Next"
-      icon: "i-simple-icons-nextdotjs"
-    - label: "GSAP"
-      icon: "i-simple-icons-greensock"
-    - label: "React Native"
-      icon: "i-simple-icons-react"
-    - label: "Node.js"
-      icon: "i-simple-icons-nodedotjs"
-    - label: "Spring Boot"
-      icon: "i-simple-icons-springboot"
-    - label: "FastAPI"
-      icon: "i-simple-icons-fastapi"
-    - label: "Redis"
-      icon: "i-simple-icons-redis"
-    - label: "PostgreSQL"
-      icon: "i-simple-icons-postgresql"
-    - label: "SQL Server"
-      icon: "i-simple-icons-microsoftsqlserver"
-    - label: "Docker"
-      icon: "i-simple-icons-docker"
+    - label: 'LangChain'
+      icon: 'i-simple-icons-langchain'
+    - label: 'LangGraph'
+      icon: 'i-lucide-git-graph'
+    - label: 'Nuxt'
+      icon: 'i-simple-icons-nuxtdotjs'
+    - label: 'Vue'
+      icon: 'i-simple-icons-vuedotjs'
+    - label: 'Next'
+      icon: 'i-simple-icons-nextdotjs'
+    - label: 'GSAP'
+      icon: 'i-simple-icons-greensock'
+    - label: 'React Native'
+      icon: 'i-simple-icons-react'
+    - label: 'Node.js'
+      icon: 'i-simple-icons-nodedotjs'
+    - label: 'Spring Boot'
+      icon: 'i-simple-icons-springboot'
+    - label: 'FastAPI'
+      icon: 'i-simple-icons-fastapi'
+    - label: 'Redis'
+      icon: 'i-simple-icons-redis'
+    - label: 'PostgreSQL'
+      icon: 'i-simple-icons-postgresql'
+    - label: 'SQL Server'
+      icon: 'i-simple-icons-microsoftsqlserver'
+    - label: 'Docker'
+      icon: 'i-simple-icons-docker'
 
   images:
     - src: /hero/random-1.avif
@@ -58,7 +58,7 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: "About Me"
+  title: 'About Me'
   description: |
     從接案公司、大學研究單位到金融系統與雲端平台，我跨足了**前後端、App 及 AI 產品**的完整開發歷程。
 
@@ -69,34 +69,34 @@ about:
 experience:
   title: Work Experience
   items:
-  - position: "資深工程師 / AI 工程師"
-    date: "2024/05 - Present"
-    company:
-      name: "惠安雲資訊（原耘騰科技）"
-      logo: "i-lucide-cloud"
-      url: ""
-      color: "#3B82F6"
-  - position: "資訊工程師"
-    date: "2023/11 - 2024/05"
-    company:
-      name: "國立陽明交通大學"
-      logo: "i-lucide-graduation-cap"
-      url: ""
-      color: "#8B5CF6"
-  - position: "程式設計師"
-    date: "2023/06 - 2023/09"
-    company:
-      name: "亞洲志遠科技"
-      logo: "i-lucide-building-2"
-      url: ""
-      color: "#10B981"
-  - position: "前端工程師"
-    date: "2022/04 - 2022/12"
-    company:
-      name: "豈止數位設計"
-      logo: "i-lucide-palette"
-      url: ""
-      color: "#F59E0B"
+    - position: '資深工程師 / AI 工程師'
+      date: '2024/05 - Present'
+      company:
+        name: '惠安雲資訊（原耘騰科技）'
+        logo: 'i-lucide-cloud'
+        url: ''
+        color: '#3B82F6'
+    - position: '資訊工程師'
+      date: '2023/11 - 2024/05'
+      company:
+        name: '國立陽明交通大學'
+        logo: 'i-lucide-graduation-cap'
+        url: ''
+        color: '#8B5CF6'
+    - position: '程式設計師'
+      date: '2023/06 - 2023/09'
+      company:
+        name: '亞洲志遠科技'
+        logo: 'i-lucide-building-2'
+        url: ''
+        color: '#10B981'
+    - position: '前端工程師'
+      date: '2022/04 - 2022/12'
+      company:
+        name: '豈止數位設計'
+        logo: 'i-lucide-palette'
+        url: ''
+        color: '#F59E0B'
 testimonials:
   - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
     author:
@@ -120,8 +120,8 @@ testimonials:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 blog:
-  title: "Latest Articles"
-  description: "技術筆記、解題思路、偶爾的胡思亂想。"
+  title: 'Latest Articles'
+  description: '技術筆記、解題思路、偶爾的胡思亂想。'
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my process and services.
@@ -161,7 +161,7 @@ faq:
             When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
 cta:
   title: "Let's build something together"
-  description: "無論是技術交流、專案合作，或是關於 AI 落地應用的探討，都歡迎與我聊聊。"
+  description: '無論是技術交流、專案合作，或是關於 AI 落地應用的探討，都歡迎與我聊聊。'
   button:
-    label: "透過 Email 聯絡我"
-    icon: "i-lucide-mail"
+    label: '透過 Email 聯絡我'
+    icon: 'i-lucide-mail'

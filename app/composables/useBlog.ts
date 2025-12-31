@@ -10,6 +10,9 @@ export const useBlog = () => {
 
     return query.all()
   }
+  const fetchPost = (path: string) => {
+    return queryCollection('blog').path(path).where('draft', '<>', true).first()
+  }
 
-  return { fetchPosts }
+  return { fetchPosts, fetchPost }
 }

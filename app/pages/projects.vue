@@ -6,7 +6,7 @@ if (!page.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page not found',
-    fatal: true
+    fatal: true,
   })
 }
 
@@ -18,7 +18,7 @@ useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  ogDescription: page.value?.seo?.description || page.value?.description,
 })
 </script>
 
@@ -30,7 +30,7 @@ useSeoMeta({
       :ui="{
         title: '!mx-0 text-left whitespace-break-spaces',
         description: '!mx-0 text-left',
-        links: 'justify-start'
+        links: 'justify-start',
       }"
     >
       <!-- <template #links>
@@ -52,7 +52,7 @@ useSeoMeta({
     </UPageHero>
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: '!pt-0',
       }"
     >
       <Motion
@@ -71,9 +71,15 @@ useSeoMeta({
           :reverse="index % 2 === 1"
           class="group cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors rounded-xl p-4 -m-4"
           :ui="{
-            wrapper: 'max-lg:!order-2'
+            wrapper: 'max-lg:!order-2',
           }"
-          @click="project.url !== '#' && navigateTo(project.url, { external: true, open: { target: '_blank' } })"
+          @click="
+            project.url !== '#' &&
+            navigateTo(project.url, {
+              external: true,
+              open: { target: '_blank' },
+            })
+          "
         >
           <template #leading>
             <span class="text-sm text-muted">
@@ -119,7 +125,7 @@ useSeoMeta({
             :alt="project.title"
             class="w-full h-48 rounded-lg"
             :class="project.imageContain ? 'object-contain' : 'object-cover'"
-          >
+          />
         </UPageCard>
       </Motion>
     </UPageSection>

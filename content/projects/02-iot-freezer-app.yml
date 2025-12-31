@@ -2,8 +2,8 @@
 
 title: 冰櫃醫生 - 安保報報
 description: 開發 IoT 設備報修媒合 App，協助店家將冷凍設備連網並快速報修。整合 Firebase 推播通知，讓店家、維修師傅、保修商三方即時掌握報修進度與報價。支援 Camera Kit 現場掃描 QR Code 快速建立報修單。
-image: "/images/projects/iot-app/amber-app.webp"
-url: "#"
+image: '/images/projects/iot-app/amber-app.webp'
+url: '#'
 imageContain: true
-tags: ["React Native", "Firebase", "MQTT", "Camera Kit"]
-date: "2025"
+tags: ['React Native', 'Firebase', 'MQTT', 'Camera Kit']
+date: '2025'
