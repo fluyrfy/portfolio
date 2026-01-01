@@ -35,10 +35,15 @@
         </div>
       </div>
     </div>
-    <p v-if="error" style="color: red">
-      {{ error }}
-    </p>
-    <div v-if="svgHtml" v-html="svgHtml" />
+    <!-- Error：友善提示 -->
+    <div
+      v-else-if="error"
+      class="flex flex-col items-center gap-3 py-8 text-gray-400"
+    >
+      <UIcon name="i-heroicons-puzzle-piece" class="size-12" />
+      <p class="text-sm">Oops! Diagram took a coffee break ☕</p>
+    </div>
+    <div v-if="svgHtml" class="mermaid-svg-wrapper" v-html="svgHtml" />
   </div>
 </template>
 
@@ -81,6 +86,16 @@ onMounted(async () => {
       },
     })
 
+    const viewBox = svg.getAttribute('viewBox')
+    if (viewBox) {
+      const [, , w, h] = viewBox.split(' ').map(Number)
+      // 設定 width 為 100%，height 根據比例自動算
+      svg.setAttribute('width', '100%')
+      svg.setAttribute('height', '100%')
+      svg.style.maxWidth = `${w}px`
+      svg.style.height = 'auto'
+    }
+
     svgHtml.value = svg.outerHTML
     loading.value = false
   } catch (e) {
@@ -91,10 +106,14 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .mermaid-excalidraw {
   display: flex;
   justify-content: center;
+}
+.mermaid-svg-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
 }
 .mermaid-excalidraw :deep(svg) {
   max-width: 100%;

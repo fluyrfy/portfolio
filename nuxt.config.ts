@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     'nuxt-studio',
     'nuxt-gtag',
     '@nuxtjs/seo',
-    '@barzhsieh/nuxt-content-mermaid',
   ],
   devtools: {
     enabled: true,
@@ -30,17 +29,11 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ['dayjs'],
     },
-  },
-  contentMermaid: {
-    components: {
-      renderer: 'MermaidExcalidraw',
-      spinner: undefined,
-      error: undefined,
-    },
-    loader: {
-      lazy: false,
-      init: {
-        suppressErrorRendering: true,
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // api: 'modern-compiler',
+        },
       },
     },
   },
