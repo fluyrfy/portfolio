@@ -31,7 +31,6 @@ export default defineNuxtConfig({
       include: ['dayjs'],
     },
   },
-
   contentMermaid: {
     components: {
       renderer: 'MermaidExcalidraw',
