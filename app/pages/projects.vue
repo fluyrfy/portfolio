@@ -96,6 +96,13 @@ useSeoMeta({
               />
             </div>
           </template>
+          <template #description>
+            <div
+              class="prose prose-sm dark:prose-invert max-w-none text-gray-600 dark:text-gray-300"
+            >
+              <MDC :value="project.description" />
+            </div>
+          </template>
           <template #footer>
             <div class="flex flex-wrap gap-2 mt-4">
               <UBadge
