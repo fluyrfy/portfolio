@@ -12,6 +12,9 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     '@nuxtjs/seo',
   ],
+  devServer: {
+    host: '0.0.0.0',
+  },
   devtools: {
     enabled: true,
   },

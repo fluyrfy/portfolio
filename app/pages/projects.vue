@@ -11,7 +11,7 @@ if (!page.value) {
 }
 
 const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
+  return queryCollection('projects').order('stem', 'DESC').all()
 })
 
 useSeoMeta({
