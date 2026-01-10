@@ -69,6 +69,9 @@ export default defineContentConfig({
           ),
         }),
         testimonials: z.array(createTestimonialSchema()),
+        seo: createBaseSchema().extend({
+          ogTitle: z.string(),
+        }),
         blog: createBaseSchema(),
         faq: createBaseSchema().extend({
           categories: z.array(
