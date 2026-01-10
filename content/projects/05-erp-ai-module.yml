@@ -1,0 +1,20 @@
+title: ERP AI Agent Module - NL 驅動的企業資源管理
+date: 2026-01-01
+description: |
+  針對先前 Text2SQL 方案在 Token 成本上的瓶頸，本專案重新設計 AI-Ready ERP 的三層架構（L3 模組智慧 / L2 跨模組分析 / L1 業務控制）。
+
+  採用 Edge-Native 策略，透過系統性基準測試與驗證，建構「大模型 + 小模型」混合模式：
+
+  - 高參數模型專責決策與深度洞察
+  - 輕量參數模型負責快速路由與工具呼叫
+
+  此架構確保資料隱私完全落地，並在消費級算力下達成高精準度與回應時間的理想平衡。
+image: images/projects/erp-ai-module/ai-erp-architecture.png
+imageContain: true
+tags:
+  - BAML
+  - FastAPI
+  - GPT-OSS
+  - "Ollama "
+  - Agent Architecture
+url: https://github.com/fluyrfy/erp-ai-module
