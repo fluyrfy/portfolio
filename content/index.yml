@@ -1,4 +1,4 @@
-title: |-
+title: |
   Hey, I'm Frank Liao
   Full-stack Engineer
 about:
@@ -94,10 +94,18 @@ hero:
       to: https://frankliao.pse.is/8hjsa3
       color: neutral
   skills:
+    - label: BAML
+      icon: i-lucide-braces
+    - label: Ollama
+      icon: i-simple-icons-ollama
+    - label: Pydantic
+      icon: i-simple-icons-pydantic
     - label: LangChain
       icon: i-simple-icons-langchain
     - label: LangGraph
       icon: i-lucide-git-graph
+    - label: FastAPI
+      icon: i-simple-icons-fastapi
     - label: Nuxt
       icon: i-simple-icons-nuxtdotjs
     - label: Vue
@@ -112,8 +120,6 @@ hero:
       icon: i-simple-icons-nodedotjs
     - label: Spring Boot
       icon: i-simple-icons-springboot
-    - label: FastAPI
-      icon: i-simple-icons-fastapi
     - label: Redis
       icon: i-simple-icons-redis
     - label: PostgreSQL
@@ -122,12 +128,6 @@ hero:
       icon: i-simple-icons-microsoftsqlserver
     - label: Docker
       icon: i-simple-icons-docker
-    - label: BAML
-      icon: i-lucide-braces
-    - label: Ollama
-      icon: i-simple-icons-ollama
-    - label: Pydantic
-      icon: i-simple-icons-pydantic
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
